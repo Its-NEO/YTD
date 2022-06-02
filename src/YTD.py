@@ -109,6 +109,7 @@ class YTD:
             youtube.register_on_complete_callback(on_download_complete)
             if not parallel_download:
                 youtube.register_on_progress_callback(on_progress)
+
             video = youtube.streams.get_by_resolution(streaming_qualities.get(quality_choice))
 
             if video is None:
