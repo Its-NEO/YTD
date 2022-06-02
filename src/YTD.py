@@ -194,7 +194,7 @@ class YTD:
         print(f'{count}. Exit')
         choice = input('Your Choice: ')
         if len(video_list) >= int(choice) >= 1:
-            res = video_list[int(choice) - 1].get('qualityLabel')
+            res = video_list[int(choice)].get('qualityLabel')
         elif int(choice) == count:
             print('Exiting')
             closing_statement()
